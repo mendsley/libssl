@@ -15,12 +15,14 @@ end
 
 -- generate system-level defaults
 opensslimpl.set_defaults = function()
+	defines {
+		"NO_WINDOWS_BRAINDEATH",
+	}
 	filter {"system:windows"}
 		defines {
 			"WIN32_LEAN_AND_MEAN",
 			"_CRT_SECURE_NO_DEPRECATE",
 			"OPENSSL_SYSNAME_WIN32",
-			"NO_WINDOWS_BRAINDEATH",
 		}
 	filter {"architecture:x32 or architecture:x64"}
 		defines {
