@@ -20,7 +20,7 @@ openssl.copy_public_headers = function(cfg)
 			if desc.public_headers then
 				local header
 				for _, header in ipairs(desc.public_headers) do
-					os.copyfile(OPENSSL_DIR .. name .. "/" .. header, final_target .. header)
+					os.copyfile(cfg.src_dir .. name .. "/" .. header, final_target .. header)
 				end
 			end
 		end
