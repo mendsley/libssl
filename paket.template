@@ -1,0 +1,17 @@
+type file
+id openssl
+version 1.0.2-f
+authors
+	openssl.org
+owner
+	Matthew Endsley
+description
+	OpenSSL library
+files
+	include/ ==> include/
+	lib/ ==> lib/
+	msvc_xp/ ==> msvc_xp/
+	openssl_ext/ ==> openssl_ext/
+	src/ ==> src/
+	* ==>
+	!*nupkg*

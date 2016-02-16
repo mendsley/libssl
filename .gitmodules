@@ -1,0 +1,9 @@
+[submodule "upsream_openssl"]
+	path = upstream_openssl
+	url = https://github.com/openssl/openssl
+[submodule "upstream_openssl"]
+	path = upstream_openssl
+	url = git://git.openssl.org/openssl.git
+[submodule "src"]
+	path = src
+	url = git://git.openssl.org/openssl.git
